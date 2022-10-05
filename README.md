@@ -149,6 +149,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
+  searchURL = "https://linuxhub-group.gitlab.io"
   author = "MeiK"
   description = "In solitude, where we are least alone."
   github = "MeiK2333"
@@ -163,7 +164,7 @@ pygmentsUseClasses = true
   rss = true
   lastmod = true
   userStatusEmoji = "😀"
-  favicon = "/images/github.png"
+  favicon = "images/github.png"
   location = "China"
   enableGitalk = true
 

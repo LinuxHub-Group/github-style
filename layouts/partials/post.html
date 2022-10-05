@@ -6,15 +6,15 @@
           <div class="flex-auto min-width-0 width-fit mr-3">
             <div class="d-flex">
               <div class="d-none d-md-block">
-                <a class="avatar mr-2 flex-shrink-0" href="{{ .Site.BaseURL }}">
+                <a class="avatar mr-2 flex-shrink-0" href="{{ .Site.BaseURL }}/">
                   <img class=" avatar-user"
-                    src="{{ with $.Site.Params.avatar }}{{ $.Site.Params.avatar }}{{ else }}{{ "images/avatar.png" | absURL }}{{ end }}"
+                    src="{{ with $.Site.Params.avatar }}{{ $.Site.Params.avatar }}{{ else }}{{ .Site.BaseURL }}/images/avatar.png{{ end }}"
                     width="32" height="32"></a>
               </div>
               <div class="d-flex flex-column">
                 <h1 class="break-word f3 text-normal mb-md-0 mb-1">
                   <span class="author">
-                    <a href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a></span><span
+                    <a href="{{ .Site.BaseURL }}/">{{ .Site.Params.author }}</a></span><span
                     class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
                       href="{{ .Permalink }}">{{ .Title }}</a></strong>
                 </h1>
@@ -92,5 +92,5 @@
     </div>
   </main>
 </div>
-<script type="application/javascript" src='{{ "js/toc.js" | absURL }}'></script>
-<link rel="stylesheet" href='{{ "css/toc.css" | absURL }}' />
+<script type="application/javascript" src='{{ .Site.BaseURL }}/js/toc.js'></script>
+<link rel="stylesheet" href='{{ .Site.BaseURL }}/css/toc.css' />
