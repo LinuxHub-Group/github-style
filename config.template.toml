@@ -24,6 +24,16 @@ pygmentsUseClasses = true
   location = "China"
   userStatusEmoji = "😀"
   enableGitalk = true
+
+  enableGiscus = true
+
+# please use https://giscus.app/ to generate repo_id and category_id
+  [params.giscus]
+    repo = "name/project"
+    repo_id = "asdiuwqeg"
+    category = "Show and tell"
+    category_id = "asdfwe"
+    lang = "en"
     
   [params.gitalk]
     clientID = "Your client ID" # Your client ID
